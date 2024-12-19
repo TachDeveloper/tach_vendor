@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "Tach_Vendor",
+    "slug": "Tach_Vendor",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/vendor72.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/logo-red-bg.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ec1135"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "AIzaSyCegXjiZNf9iM4sgDsCE9xIYDZDhddr3iY"
+      },
+      "infoPlist": {
+      "NSLocationWhenInUseUsageDescription": "Allow the app to access your location."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/vendor72.png",
+        "backgroundColor": "#ffffff"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCegXjiZNf9iM4sgDsCE9xIYDZDhddr3iY"
+        }
+      },
+      "package": "com.srikanth3075.Tach_Vendor"
+    },
+    
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/vendor72.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "6b690a1c-07ed-4338-b1fe-087b6b13d208"
+      }
+    }
+  }
+}
