@@ -8,7 +8,7 @@ export const fetchPickupList = createAsyncThunk(
     try {
       const vendorId = await getVendorId();
       const response = await axios.get(
-        `https://esdy.in/tachapis/vendor-api/get-orders.php?ready_to_pick_orders&vendor_id=${vendorId}`
+        `https://tach21.com/tachapis/vendor-api/get-orders.php?ready_to_pick_orders&vendor_id=${vendorId}`
       );
       // console.log(response.data);
       return response.data;

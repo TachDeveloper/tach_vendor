@@ -124,7 +124,7 @@ const StatusCards = ({
   // function fetchPickupItems() {
   //   axios
   //     .get(
-  //       `https://esdy.in/tachapis/vendor-api/get-orders.php?vendor_id=${vendorId}&ready_to_pick_items`
+  //       `https://tach21.com/tachapis/vendor-api/get-orders.php?vendor_id=${vendorId}&ready_to_pick_items`
   //     )
   //     .then((response) => {
   //       // console.log(response.data);

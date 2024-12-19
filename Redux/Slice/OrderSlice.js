@@ -8,7 +8,7 @@ export const fetchOrderData = createAsyncThunk(
   'order/fetchOrderData',
   async (orderId) => {
     const vendorId = await getVendorId()
-    const response = await axios.get(`https://esdy.in/tachapis/vendor-api/get-orders.php?order_wise_items&vendor_id=${vendorId}&order_id=${orderId}`);  
+    const response = await axios.get(`https://tach21.com/tachapis/vendor-api/get-orders.php?order_wise_items&vendor_id=${vendorId}&order_id=${orderId}`);  
     return response.data[0];
   }
 );

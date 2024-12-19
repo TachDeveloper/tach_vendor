@@ -8,7 +8,7 @@ export const fetchPayouts = createAsyncThunk(
     try {
       const vendorId = await getVendorId();
       const response = await axios.get(
-        `https://esdy.in/tachapis/vendor-api/get-orders.php?vendor_insights&vendor_id=${vendorId}&dateFilter=${filter?.dateFilter}&fromDate=${filter?.customRange?.startDate}&toDate=${filter?.customRange?.endDate}`
+        `https://tach21.com/tachapis/vendor-api/get-orders.php?vendor_insights&vendor_id=${vendorId}&dateFilter=${filter?.dateFilter}&fromDate=${filter?.customRange?.startDate}&toDate=${filter?.customRange?.endDate}`
       );
       return response.data;
     } catch (error) {

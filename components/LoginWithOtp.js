@@ -55,7 +55,7 @@ const LoginWithOtp = ({ navigation }) => {
     try {
       setIsLoading(true);
       const response = await axios.get(
-        `https://esdy.in/tachapis/vendor-api/login-with-mobile.php?mobile=${number}&check`
+        `https://tach21.com/tachapis/vendor-api/login-with-mobile.php?mobile=${number}&check`
       );
       if (response.data.status === "success") {
         // console.log("phone number verifyied");
@@ -100,7 +100,7 @@ const LoginWithOtp = ({ navigation }) => {
     setIsLoading(true);
     axios
       .get(
-        `https://esdy.in/tachapis/vendor-api/login-with-mobile.php?mobile=${number}&otp=${otpInput}&check`
+        `https://tach21.com/tachapis/vendor-api/login-with-mobile.php?mobile=${number}&otp=${otpInput}&check`
       )
       .then((response) => {
         // console.log(response);
