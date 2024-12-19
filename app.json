@@ -1,8 +1,8 @@
 {
   "expo": {
     "name": "Tach_Vendor",
-    "slug": "Tach_Vendor",
-    "version": "1.0.0",
+    "slug": "tachvendor",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/vendor72.png",
     "scheme": "myapp",
@@ -56,7 +56,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "6b690a1c-07ed-4338-b1fe-087b6b13d208"
+        "projectId": "432dcf23-751b-4bad-ab68-1f799c67bbe3"
       }
     }
   }
