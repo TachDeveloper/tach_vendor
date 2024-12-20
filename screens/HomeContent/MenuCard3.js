@@ -29,7 +29,7 @@ const MenuCard3 = ({
     if (isRejected) {
       axios
         .get(
-          `https://tach21.com/tachapis/vendor-api/get-orders.php?item_id=${id}&reject_item`
+          `http://tach21.in/tachapis/vendor-api/get-orders.php?item_id=${id}&reject_item`
         )
         .then((response) => {
           onPickup(isRejected);
@@ -41,7 +41,7 @@ const MenuCard3 = ({
     if (isAccept) {
       axios
         .get(
-          `https://tach21.com/tachapis/vendor-api/get-orders.php?item_id=${id}&accept_item`
+          `http://tach21.in/tachapis/vendor-api/get-orders.php?item_id=${id}&accept_item`
         )
         .then((response) => {
           onPickup(isAccept);
@@ -53,7 +53,7 @@ const MenuCard3 = ({
     if (isPickup) {
       axios
         .get(
-          `https://tach21.com/tachapis/vendor-api/get-orders.php?item_id=${id}&ready_to_pickup`
+          `http://tach21.in/tachapis/vendor-api/get-orders.php?item_id=${id}&ready_to_pickup`
         )
         .then((response) => {
           onPickup(isPickup);

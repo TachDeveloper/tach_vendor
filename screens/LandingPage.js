@@ -42,15 +42,15 @@ const LandingPage = () => {
         paginationStyle={{ bottom: "26%" }}
       >
         {/* <ImageBackground
-            source={{ uri: "https://tach21.com/admin/dashboard/uploads/1698440135.webp"}}
+            source={{ uri: "http://tach21.in/admin/dashboard/uploads/1698440135.webp"}}
           style={styles.slide}
         ></ImageBackground>
         <ImageBackground
-          source={{uri: "https://tach21.com/admin/dashboard/uploads/1698440143.webp"}}
+          source={{uri: "http://tach21.in/admin/dashboard/uploads/1698440143.webp"}}
           style={styles.slide}
         ></ImageBackground>
         <ImageBackground
-          source={{uri: "https://tach21.com/admin/dashboard/uploads/1698440151.webp"}}
+          source={{uri: "http://tach21.in/admin/dashboard/uploads/1698440151.webp"}}
           style={styles.slide}
         ></ImageBackground> */}
         <Image

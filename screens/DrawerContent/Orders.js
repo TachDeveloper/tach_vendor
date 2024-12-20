@@ -28,7 +28,7 @@ const Orders = () => {
   function getOrders() {
     axios
       .get(
-        `https://tach21.com/tachapis/vendor-api/get-orders.php?vendor_id=${vendorId}&get_order_list`
+        `http://tach21.in/tachapis/vendor-api/get-orders.php?vendor_id=${vendorId}&get_order_list`
       )
       .then((response) => {
         // console.log(response.data);

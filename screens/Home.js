@@ -95,7 +95,7 @@ const Home = ({ route }) => {
     const vendorId = await getVendorId();
     axios
       .get(
-        `https://tach21.com/tachapis/vendor-api/get-orders.php?vendor_id=${vendorId}&new_orders_with_items`
+        `http://tach21.in/tachapis/vendor-api/get-orders.php?vendor_id=${vendorId}&new_orders_with_items`
       )
       .then((response) => {
         // console.log(response.data, vendorId);
@@ -195,7 +195,7 @@ const Home = ({ route }) => {
 function getTotalSales() {
     axios
       .get(
-        `https://tach21.com/tachapis/vendor-api/get-orders.php?vendorid=${vendorId}&fetch_total`
+        `http://tach21.in/tachapis/vendor-api/get-orders.php?vendorid=${vendorId}&fetch_total`
       )
       .then((response) => {
         setTotalSales(response.data[0]);
@@ -205,7 +205,7 @@ function getTotalSales() {
   function getTodaySales() {
     axios
       .get(
-        `https://tach21.com/tachapis/vendor-api/get-orders.php?vendorid=${vendorId}&todays_date=${date.replaceAll(
+        `http://tach21.in/tachapis/vendor-api/get-orders.php?vendorid=${vendorId}&todays_date=${date.replaceAll(
           "/",
           "-"
         )}&fetch_todays`

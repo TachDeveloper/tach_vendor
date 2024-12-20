@@ -57,7 +57,7 @@ const OrderDetailsScreen = ({ route }) => {
       setIsLoading(true);
       const vendorId = await getVendorId();
       const response = await axios.get(
-        `https://tach21.com/tachapis/vendor-api/get-orders.php?accept_order&vendor_id=${vendorId}&order_id=${orderItems.order_id}&cancel_items=${nonAvailableItems?.length > 0 ? nonAvailableItems?.join(",") : ""}`
+        `http://tach21.in/tachapis/vendor-api/get-orders.php?accept_order&vendor_id=${vendorId}&order_id=${orderItems.order_id}&cancel_items=${nonAvailableItems?.length > 0 ? nonAvailableItems?.join(",") : ""}`
       );
       console.log(response.data);
       console.log("Order Accepted");
@@ -74,7 +74,7 @@ const OrderDetailsScreen = ({ route }) => {
       setIsLoading(true);
       const vendorId = await getVendorId();
       const response = await axios.get(
-        `https://tach21.com/tachapis/vendor-api/get-orders.php?reject_order&vendor_id=${vendorId}&order_id=${orderItems.order_id}`
+        `http://tach21.in/tachapis/vendor-api/get-orders.php?reject_order&vendor_id=${vendorId}&order_id=${orderItems.order_id}`
       );
       // console.log(response);
       console.log("Order Rejected");
@@ -91,13 +91,18 @@ const OrderDetailsScreen = ({ route }) => {
     const vendorId = await getVendorId();
     try {
       const response = await axios.get(
-        `https://tach21.com/tachapis/vendor-api/get-orders.php?ready_to_pick_order&vendor_id=${vendorId}&order_id=${orderItems.order_id}`
+        `http://tach21.in/tachapis/vendor-api/get-orders.php?ready_to_pick_order&vendor_id=${vendorId}&order_id=${orderItems.order_id}`
       );
       // console.log(response);
       console.log(response.data);
-      console.log("Order pickup");
+      console.log("Order Picked");
       dispatch(fetchPickupList());
       navigation.navigate("Tab");
+
+
+      
+
+
     } catch (error) {
       console.log("Error marking order as ready for pickup:", error);
     } finally {

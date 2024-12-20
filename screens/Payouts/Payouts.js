@@ -96,7 +96,7 @@ const Payouts = () => {
   //     try {
   //       const vendorId = await getVendorId();
   //       const response = await axios.get(
-  //         `https://tach21.com/tachapis/vendor-api/get-orders.php?vendor_insights&vendor_id=${vendorId}&dateFilter=${selectedValue}`,
+  //         `http://tach21.in/tachapis/vendor-api/get-orders.php?vendor_insights&vendor_id=${vendorId}&dateFilter=${selectedValue}`,
   //         {
   //           params: {
   //             vendor_insights: true,
