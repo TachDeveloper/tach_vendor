@@ -18,7 +18,7 @@ export const StatusProvider = ({ children }) => {
     setVendorId(vendorId);
     axios
       .get(
-        `https://esdy.in/tachapis/vendor-api/user-details.php?vendor_id=${vendorId}&get_vendor_details`
+        `http://tach21.in/tachapis/vendor-api/user-details.php?vendor_id=${vendorId}&get_vendor_details`
       )
       .then((response) => {
         setIsOnline(parseInt(response.data.store_status));

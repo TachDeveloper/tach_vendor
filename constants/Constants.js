@@ -8,6 +8,6 @@ export const darkWeatherColors = [
 ];
 
 
-export const baseApiUrl = 'https://esdy.in/tachapis/api/'
+export const baseApiUrl = 'http://tach21.in/tachapis/api/'
 
-export const baseImageUrl = 'https://esdy.in/tach.ai/admin/dashboard/'
+export const baseImageUrl = 'http://tach21.in/tach.ai/admin/dashboard/'

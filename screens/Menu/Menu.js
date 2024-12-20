@@ -20,7 +20,7 @@ const Menu = () => {
     const vendorId = await AsyncStorage.getItem("VendorId");
     axios
       .get(
-        `https://esdy.in/tachapis/vendor-api/vendor-products.php?vendor_id=${vendorId}&get_products`
+        `http://tach21.in/tachapis/vendor-api/vendor-products.php?vendor_id=${vendorId}&get_products`
       )
       .then((response) => {
         setItems(response.data);
@@ -31,7 +31,7 @@ const Menu = () => {
     const vendorId = await AsyncStorage.getItem("VendorId");
     axios
       .get(
-        `https://esdy.in/tachapis/vendor-api/user-details.php?vendor_id=${vendorId}&get_vendor_details`
+        `http://tach21.in/tachapis/vendor-api/user-details.php?vendor_id=${vendorId}&get_vendor_details`
       )
       .then((response) => {
         setVendor(response.data);

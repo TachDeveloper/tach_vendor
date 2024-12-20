@@ -29,7 +29,7 @@ const MenuCard2 = ({
     try {
       axios
         .get(
-          `https://esdy.in/tachapis/vendor-api/vendor-products.php?vendor_id=${vendorId}&product_id=${id}&status=${
+          `http://tach21.in/tachapis/vendor-api/vendor-products.php?vendor_id=${vendorId}&product_id=${id}&status=${
             initialStock ? "0" : "1"
           }&update_product`
         )

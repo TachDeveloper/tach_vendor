@@ -124,7 +124,7 @@ const StatusCards2 = ({
   function fetchPickupItems() {
     axios
       .get(
-        `https://esdy.in/tachapis/vendor-api/get-orders.php?vendor_id=${vendorId}&ready_to_pick_items`
+        `http://tach21.in/tachapis/vendor-api/get-orders.php?vendor_id=${vendorId}&ready_to_pick_items`
       )
       .then((response) => {
         // console.log(response.data);
