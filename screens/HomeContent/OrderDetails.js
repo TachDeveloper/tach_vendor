@@ -94,7 +94,7 @@ const OrderDetailsScreen = ({ route }) => {
         `http://tach21.in/tachapis/vendor-api/get-orders.php?ready_to_pick_order&vendor_id=${vendorId}&order_id=${orderItems.order_id}`
       );
       // console.log(response);
-      console.log(response.data);
+      console.log(response.data, "ord");
       console.log("Order Picked");
       dispatch(fetchPickupList());
       navigation.navigate("Tab");
