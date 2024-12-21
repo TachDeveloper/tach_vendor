@@ -29,7 +29,7 @@ const ToggleSwitchButton = () => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium); // Trigger haptic feedback on toggle
     axios
       .get(
-        `http://tach21.in/tachapis/vendor-api/user-details.php?vendor_id=${vendorId}&status=${
+        `https://tach21.in/tachapis/vendor-api/user-details.php?vendor_id=${vendorId}&status=${
           isOnline ? "0" : "1"
         }&change_status=`
       )

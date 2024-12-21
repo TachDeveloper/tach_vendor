@@ -9,7 +9,7 @@ export const fetchVendorData = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     let vendorId = await getVendorId();
     try {
-      const response = await axios.get(`http://tach21.in/tachapis/vendor-api/user-details.php?vendor_id=${vendorId}&get_vendor_details`);
+      const response = await axios.get(`https://tach21.in/tachapis/vendor-api/user-details.php?vendor_id=${vendorId}&get_vendor_details`);
       return response.data;
     } catch (error) {
       return rejectWithValue('Failed to fetch vendor data');
